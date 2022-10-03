@@ -1,0 +1,37 @@
+ALGORITHM read a sentence
+VAR
+    var CHAR: STRING;
+    var long : number;
+BEGIN
+    white ('gimme a phrase')
+    read (char,'.')
+    long=char.length-1
+    write ('this is the length of your sentence',long)
+END
+
+var CHAR ='Hey everyone my name is Yassine .'
+
+
+ALGORITHM Read number of words
+VAR
+    char=STRING
+    sum=0
+BEGIN
+    write('gimme a phrase')
+    read(char)
+    IF (char = " ") THEN
+        sum+1
+    END_IF
+    read ("Word count",sum)
+END
+
+ALGORITHM vowel number
+VAR
+    char = STRING
+    vowel=0
+BEGIN
+    IF (char = "a" or char = "e" or char = "u" or char = "i" or char = "o" or char = "y") THEN
+        v+=1
+    END_IF
+    ecrire ('number of vowels', v )
+END
