@@ -1,0 +1,34 @@
+ALGORITHM compareArrays
+VAR
+    tab1, tab2 : array_name : ARRAY_OF INTEGER[];
+    sum : nombre;
+BEGIN
+    read tab1;
+    read tab2;
+    FOR i FROM 1 TO tab1.length STEP i++  DO
+        FOR j FROM 1 TO tab2.length STEP j++  DO
+            IF (tab1[i]<>tab2[j]) THEN
+                sum: tab1 [i]+tab2[j];
+            END_IF
+        END_FOR
+    END_FOR
+    write : "here's the result",sum;
+END
+
+
+ALGORITHM sumArrays
+VAR
+    tab1, tab2 : array_name : ARRAY_OF INTEGER[];
+    sum : nombre;
+BEGIN
+    read tab1;
+    read tab2;
+    FOR i FROM 1 TO tab1.length STEP i++  DO
+        FOR j FROM 1 TO tab2.length STEP j++  DO
+            IF (tab1[i]==tab2[j]) THEN
+                sum: tab1 [i]+tab2[j];
+            END_IF
+        END_FOR
+    END_FOR
+    write : "here's the result",sum;
+END
