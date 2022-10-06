@@ -1,0 +1,58 @@
+FUNCTION dot_product(v1,v2:ARRAY_OF INTEGER) : return_type : number
+VAR
+    sum, multiply : INTEGER
+BEGIN
+    IF (v1.length<>v2.length) THEN
+        write: "both tables are different !"
+        else 
+        WHILE (i>v1.length) DO
+            multiply : multiply+v1[i]+v2[i];
+        END_WHILE
+    END_IF
+    RETURN multiply ;
+END
+
+
+ALGORITHM dot_product
+VAR
+   tab1, tab2 
+BEGIN
+    read: tab1
+    read: tab2
+    dot_product(v1,v2)=phrase
+    IF (ps=0) THEN
+        write : "this tables are Orthogonality"
+        else
+        write : "this tables are not Orthogonality"
+    END_IF
+END
+
+
+
+PROCEDURE dot_product(multiply:INTEGER,v1,v2:ARRAY_OF INTEGER)
+VAR
+    sum : INTEGER
+BEGIN
+    IF (v1.length<>v2.length) THEN
+        write: "both tables are different !"
+        else 
+        WHILE (i>v1.length) DO
+            multiply : multiply+v1[i]+v2[i];
+        END_WHILE
+    END_IF
+END
+
+
+ALGORITHM dot_product
+VAR
+    v1,v2 : ARRAY_OF INTEGER, multiply: INTEGER
+BEGIN
+    read(v1);
+    read(v2);
+    dot_product(v1,v2,multiply)
+    IF (multiply=0) THEN
+        write : "this tables are Orthogonality"
+        else
+        write : "this tables are not Orthogonality"
+    END_IF
+END
